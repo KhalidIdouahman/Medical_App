@@ -3,6 +3,7 @@ import 'package:medical_app_final/constants/constants.dart';
 import 'package:medical_app_final/models/item.dart';
 import 'package:medical_app_final/pages/details_page.dart';
 import 'package:medical_app_final/widgets/dashboard_item_widget.dart';
+import 'package:medical_app_final/widgets/nav_bar_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // drawer: const NavBar(),
+      drawer: const NavBar(),
       backgroundColor: kAppColor,
       // i surround my column with the builder widget for the drawer to work , because we need a context inside
       // the scaffold to work .
